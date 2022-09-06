@@ -9,6 +9,7 @@ let numeroDeAlumnos = "181"
 console.log(numeroDeAlumnos)
 let enCurso = "true"
 console.log(enCurso)
+
 */
 
 
@@ -101,8 +102,8 @@ if(data1 >= cost ||data2 >= cost || totalAvailable >= cost){
 
 
 
-
 /*
+
 SWITCH
 
 let drink = prompt ("favourite drink between coke and water?");
@@ -164,12 +165,44 @@ do {
 */
 
 
+/*
+FOR
 
-
-let numero = Number(prompt("ingrese un numero"));
-
-for( let i = 1; i <= 10; i++){
+for( let i = 1; i <= 20; i+2){
     let resultado = numero * i;
     alert(`${numero} x ${i} = ${resultado}`);
 }
+
+
+for ( let i = 1; i <= 10; i++){
+    console.log(`el valor de I es: ${i}`);
+}*/
+
+
+/*
+
+FUNCTIONS
+
+function operation (name, secondName, lastName){
+console.log(`hola ${name} ${secondName} ${lastName}`);
+}
+
+operation ("juan", "antonio", "marin")
+
+
+
+function sumar (primerNumero, segundoNumero) {
+    let resultado = primerNumero + segundoNumero;
+    return resultado;
+}
+
+console.log(sumar(5,6));
+
+*/
+
+
+
+
+
+
 
