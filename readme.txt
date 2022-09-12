@@ -1,3 +1,3 @@
 Hola! la idea para el proyecto final es continuar con el proyecto que venia desarrollando en HTML y CSS del curso anterior. Es un e-commerce con un diseño responisive llamativo. Nace de un concepto minimalista por lo que no vamos a incluir contenido inecesario mas allá de las fotos de los productos y la operación de compra, claro que he pensado en darle mucha interactividad al sitio y mezclar transiciones del diseño con aplicabilidad JavaScript. Hasta el momento quiero aplicar la funcion del carrito y lógica del proceso de compra. 
 
-Me gustaría saber cuales son los errores que tengo para poder corregir. 
+ 12/09/2022: Hola Santiago, recuerda que en el archivo challenge.js vas a encontrar ésta vez el simulador interactivo (funciones) y la incorporación de arrays. En los proximos vas a encontrar solo el desafío vigente. 

@@ -1,58 +1,21 @@
-
-
+// Simulador interactivo, esta funcion me es util para aplicacion de cupones de descuento en un e-commerce
 
 /*
-let operation = prompt (`Please select the items you would like to get:
-1. chair
-2. table
-3. item
-4. spoon`);
 
-function operation (chair, table, item, spoon){
+function finalprice (price, discount){
+    return price - ((price - discount) / 100 )
+}
 
+for(i=0; i<5; i++){
+    let result = finalprice (parseFloat(prompt("Enter your item value")), parseFloat(prompt("enter discount %")));
+    alert(result);
+}
 
-switch (operation){
-    case "chair":
-        alert(`the cost of your product is 45`);
-    break;
-    case "table": 
-        console.log(`the cost of your product is 60`);
-    break;
-    case "item": 
-        console.log(`the cost of your product is 25`);
-    break;
-    case "spoon": 
-        console.log(`the cost of your product is 110`);
-    break;
-    default:
-        alert(`Option not valid, press f5 and try again`);
-    break;
-}}; 
- */
+*/
 
+// Incorporando arrays, la idea es agregarle una descripción a cada elemento del array pero se me estaba complicando un poco, quise dejarlo simple para cumplir con la consigna pero vamos mejorando.
 
-let operation = prompt (`Please select the items you would like to get:
-1. chair
-2. table
-3. item
-4. spoon`)
-
-let suma = " "
-let total = 0
-
-while (pedido != "ESC" && pedido != "esc")
-    switch (pedido){
-        case"1":
-            suma=500
-            break;
-        case"2":
-            suma=250
-            break;
-        case "3":
-            suma=180;
-            break;
-        case"4":
-            suma=200;
-            break;     
-    }
-    total += suma
+const selection = [`zenGardens`, `suculents`, `indoors`, `outdoors`];
+for (let index = 0; index < selection.length; index++) {
+    alert("Our main products are " + index + " " + selection[index]);
+};
