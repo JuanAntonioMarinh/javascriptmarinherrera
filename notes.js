@@ -467,10 +467,16 @@ for(i=0; i<5; i++){
 }
 
 
+
+// Incorporando arrays, la idea es agregarle una descripción a cada elemento del array pero se me estaba complicando un poco, quise dejarlo simple para cumplir con la consigna pero vamos mejorando.
+
+
+const selection = [`zenGardens`, `suculents`, `indoors`, `outdoors`];
+for (let index = 0; index < selection.length; index++) {
+    alert("Our main products are " + index + " " + selection[index]);
+};
+
 */
-
-
-
 
 
 
