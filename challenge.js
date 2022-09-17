@@ -3,7 +3,7 @@
 
 
 function finalprice (price, discount){
-    return price - ((price - discount) / 100 )
+    return price - ((price * discount) / 100 )
 }
 
 for(i=0; i<5; i++){

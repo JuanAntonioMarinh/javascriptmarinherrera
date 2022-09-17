@@ -476,12 +476,51 @@ for (let index = 0; index < selection.length; index++) {
     alert("Our main products are " + index + " " + selection[index]);
 };
 
+
+
+
+// OBJECTS
+
+const nombre = "Jardin Zen";
+const precio = "$25"
+const disponible = true;
+
+
+
+const product = {
+    nombre: "Jardin Zen",
+    precio:  "$25",
+    disponible: true,
+};
+
+// console.log(product)
+
+
+
+// Add properties to an object
+
+// product.imagen = "imagen.jpg";
+
+
+// Deelete properties
+
+// delete product.disponible
+
+
+
+function Product(nombre, precio){
+    this.nombre = nombre;
+    this.precio = precio;
+    this.disponible = true;
+}
+
+const product2 = new Product("Suculents", "$45");
+
+console.log(product2)
+
+
+
 */
-
-
-
-
-
 
 
 
