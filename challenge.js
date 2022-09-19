@@ -1,12 +1,20 @@
-// Simulador interactivo, esta funcion me es util para aplicacion de cupones de descuento en un e-commerce
+// Calculadora donde podemos realizar operaciones básicas. Simulador interactivo 
 
 
 
-function finalprice (price, discount){
-    return price - ((price * discount) / 100 )
-}
+let first = Number(prompt("enter first number please"));
+let operation = prompt("which operation would you like to do: \n 1. ADD. \n 2. MINUS. \n 3. DIVIDE. \n 4. MULTIPLY ");
+let second = Number(prompt("enter second number please"));
+let calculate;
 
-for(i=0; i<5; i++){
-    let result = finalprice (parseFloat(prompt("Enter your item value")), parseFloat(prompt("enter discount %")));
-    alert(result);
-}
+    if (operation == "ADD" || operation == "1") {
+        calculate = first + second;
+    } else if (operation == "MINUS" || operation == "2") {
+        calculate = first - second;
+    } else if ( operation == "DIVIDE" || operation == "3"){
+        calculate = first / second;
+    } else if (operation == "MULTIPLY" || operation == "4"){
+        calculate = first * second;
+    }
+
+    alert (calculate);

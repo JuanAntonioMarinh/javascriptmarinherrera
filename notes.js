@@ -493,7 +493,7 @@ const product = {
     disponible: true,
 };
 
-// console.log(product)
+console.log(product)
 
 
 
@@ -519,8 +519,96 @@ const product2 = new Product("Suculents", "$45");
 console.log(product2)
 
 
+// Simulador interactivo, esta funcion me es util para aplicacion de cupones de descuento en un e-commerce
+
+
+
+function finalprice (price, discount){
+    return price - ((price - discount) / 100 )
+}
+
+for(i=0; i<5; i++){
+    let result = finalprice (parseFloat(prompt("Enter your item value")), parseFloat(prompt("enter discount %")));
+    alert(result);
+}
+
+
+
+// BOOKLET 19. 
+
+const COT_DOLAR = 150;
+const cotizarDolar = (pesos) => pesos / COT_DOLAR;
+const cotizarPesos = (dolar) => dolar / COT_DOLAR;
+
+let seleccion = prompt ("SELECCIONAR COTIZACION \n 1- Dolares a pesos \n 2- Pesos a dolare ");
+let valor = prompt ("VALOR");
+switch (seleccion){
+    case "1":
+        alert (cotizarPesos(valor));
+        break;
+    case "2":
+        alert (cotizarDolar(valor));
+        break;
+    default:
+        break;
+}
+
+
+
+
+// 20. VALIDACIÓN DE ELEMENTOS 
+
+function validacion (cadena) {
+    return cadena != ``;
+}
+
+let entrada = prompt ("ingresar cadena");
+while (entrada != `ESC`){
+    alert (validacion(entrada)); 
+entrada = prompt ("INGRESAR CADENA");
+}
+
+
+
+// CALCULADORA 
+
+
+
+let primerNumero = prompt (`First number`);
+let segundoNumero = prompt (`Second number`);
+let operacion = prompt (`operation`);
+
+function calculadora (primerNumero, segundoNumero, operacion){
+    switch (operacion)  {
+        case "+":
+            return primerNumero + segundoNumero;
+            break;
+        case "-":
+            return primerNumero - segundoNumero;
+            break;
+        case "*":
+            return primerNumero * segundoNumero;
+            break;
+        case "/":
+            return primerNumero / segundoNumero;
+            break;
+        default:
+            return 0;
+            break;
+        
+    }
+}
+
+
+alert(calculadora());
 
 */
+
+
+
+
+
+
 
 
 
